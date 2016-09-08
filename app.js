@@ -1,4 +1,4 @@
-var app = angular.module('plunker', ['google-maps']);
+var app = angular.module('Boston-Maps', ['google-maps']);
 
 app.controller('MainCtrl', function($scope, $document) {
     
