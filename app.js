@@ -65,7 +65,7 @@ app.controller('helpController', ['$scope', function ($scope) {
 
 app.controller('weatherController', ['$scope', '$http', function ($scope, $http) {
     var weather = new XMLHttpRequest();
-    weather.open("GET", "http://api.wunderground.com/api/fa5715ba5adff2ac/conditions/q/MA/Boston.json", false)
+    weather.open("GET", "https://api.wunderground.com/api/fa5715ba5adff2ac/conditions/q/MA/Boston.json", false)
     weather.send(null);
 
     var r = JSON.parse(weather.response);
